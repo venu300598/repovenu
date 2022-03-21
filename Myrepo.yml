@@ -12,4 +12,14 @@
         name: apache2
         state: started
 
+  - name: i want to install webserver on ansible RedHat nodes
+    yum:
+      name: httpd
+      state: present
+
+  - name: i want start webserver on ansible RedHat nodes
+    service:
+        name: httpd
+        state: started
+
    
