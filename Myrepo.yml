@@ -8,8 +8,8 @@
       state: present
   
   - name: i want to start webserver on ansible ubuntu nodes
-    servive:
+    service:
         name: apache2
         state: started
-        
+
    
