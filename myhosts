@@ -1,0 +1,10 @@
+[mywebservers]
+172.31.30.63
+172.31.42.135
+
+
+[myubuntuserver]
+172.31.30.63
+
+[myRedHarserver]
+172.31.42.135
