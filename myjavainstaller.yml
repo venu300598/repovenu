@@ -4,11 +4,11 @@
   tasks:
   - name:
     apt:
-      name: i want to install java on ubuntu nodes
+      name: "{{myjavainstaller}}"
       state: present
       when: ansible_os_family == "Debian"
   - name:
     yum:
-      name: i want to install java on RedHat nodes
+      name: "{{myjavainstaller2}}"
       state: started
       when: ansible_os_family == "RedHat"       
