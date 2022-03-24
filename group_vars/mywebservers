@@ -3,3 +3,5 @@
 
 mywebserverubuntu: apache2
 mywebserverRedHat: httpd
+myjavainstaller: openjdk-8-jre
+myjavainstaller2: java-1.8.0-openjdk
