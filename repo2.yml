@@ -1,20 +1,19 @@
 ---
-- hosts: 172.31.30.63
+- hosts: 172.31.42.135
   become: yes
   vars:
-    myvar1: git 
-    myvar2: wget
-    myvar3: tree
+    var1: git 
+    var2: tree
+    var3: wget
   tasks:
-  - name: i want to display git
-    debug:
-      msg: "{{myvar3}}"  
-
-  - name: i want to install git ubuntu nodes
-    apt:
+  - name: display tree
+    debug: 
+      msg: "{{var1}}"  
+  - name: install git
+    yum:
       name: "{{item}}"    
       state: present
-    loop: 
-       - "{{myvar3}}"  
-       - "{{myvar2}}"
-       - "{{myvar1}}"
+    loop:
+       - "{{var1}}"  
+       - "{{var2}}"
+       - "{{var3}}"
