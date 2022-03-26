@@ -1,4 +1,4 @@
 ---
 
 
-myjavainstaller: openjdk-8-jre
+myjavainstaller: openjdk-9-jre
