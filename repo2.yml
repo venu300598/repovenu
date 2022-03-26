@@ -8,13 +8,13 @@
   tasks:
   - name: i want to display myvar2
     debug:
-      msg: "{{myvar2}}"  
+      msg: "{{myvar1}}"  
 
   - name: i want to install git
     apt:
-      name: "{{item}}"
+      name: "{{ item }}"
       start: present
     loop: 
-      - "{{myvar2}}"  
-      - "{{myvar1}}"
+      - "{{myvar1}}"  
+      - "{{myvar2}}"
       - "{{myvar3}}"
