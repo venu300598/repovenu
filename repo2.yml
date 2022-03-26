@@ -13,7 +13,7 @@
   - name: i want to install git
     apt:
       name: "{{ item }}"
-      start: present
+      state: present
     loop: 
       - "{{myvar1}}"  
       - "{{myvar2}}"
