@@ -9,3 +9,12 @@
   - name: i want to display git
     debug:
       msg: "{{myvar3}}"  
+
+  - name: i want to install git ubuntu nodes
+    apt:
+      name: "{{item}}"    
+      state: present
+    loop: 
+       - "{{myvar3}}"  
+       - "{{myvar2}}"
+       - "{{myvar1}}"
