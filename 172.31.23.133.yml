@@ -1,0 +1,9 @@
+---
+- hosts: 172.31.23.133
+  become: yes
+  tasks: 
+  - name: install jave 7 in unbuntu nodes
+    apt:
+      name: "{{myjavainstaller}}"
+      state: present
+    when: ansible_os_family == "Debian"   
