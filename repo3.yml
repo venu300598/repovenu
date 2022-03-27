@@ -1,0 +1,25 @@
+--- 
+- hosts: webservers2
+  become: yes
+  tasks:
+  - name: install git in ubuntu
+    apt:
+      name: "{{installgit}}"
+      state: present
+    when: ansible_os_family == "Debian"
+  - name: install wget in RedHat
+    yum:
+      name: "{{installwget}}"
+      state: present
+    when: ansible_os_family == "RedHat"
+  - name: install wget in ubuntu
+    apt: 
+      name: "{{installwget}}"
+      state: present
+    when: ansible_os_family == "Debian"
+  - name: install git in RedHat
+    apt:
+      name: "{{installgit}}"
+      state: present
+    when: ansible_os_family == "RedHat"  
+         
