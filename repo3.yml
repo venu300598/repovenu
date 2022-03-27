@@ -18,7 +18,7 @@
       state: present
     when: ansible_os_family == "Debian"
   - name: install git in RedHat
-    apt:
+    yum:
       name: "{{installgit}}"
       state: present
     when: ansible_os_family == "RedHat"  
