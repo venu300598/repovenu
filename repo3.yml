@@ -1,5 +1,5 @@
 --- 
-- hosts: mywebservers
+- hosts: webservers2
   become: yes
   vars: 
     var1: "{{installgit}}"
