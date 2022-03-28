@@ -7,6 +7,7 @@
       name: tree
       staaate: present
     tags: mytree
+    ignore_errors: True
 
   - name: install git
     apt: 
