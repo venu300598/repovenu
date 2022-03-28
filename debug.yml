@@ -8,5 +8,15 @@
 
   - name: i want to display command action
     debug: 
-        msg: "{{myresult}}"  
-        
+        msg: "{{myresult}}" 
+
+  - name: install git
+    apt:
+      name: git
+      state: present
+
+  - name: install wget
+    apt:
+      name: wget
+      state: present
+      
