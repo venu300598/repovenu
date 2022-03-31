@@ -4,7 +4,6 @@
   tasks:
   - name: install apache2
     apt:
-      name: installapache2
+      name: "{{installapache2}}"
       state: present
     when: ansible_os_family == "Debian"
-      
