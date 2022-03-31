@@ -1,0 +1,10 @@
+---
+- hosts: webservers3
+  become: yes
+  tasks:
+  - name: install apache2
+    apt:
+      name: installapache2
+      state: present
+    when: ansible_os_family == "Debian"
+      
