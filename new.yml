@@ -1,9 +1,15 @@
 ---
 - hosts: webservers3
   become: yes
+  vars:
+    var1: "{{install_apache2}}"
+    var2: "{{install_git}}"
   tasks:
   - name: install apache2
     apt:
-      name: apache2
+      name: "{{item}}"
       state: present
     when: ansible_os_family == "Debian"
+    loop:
+       - "{{var1}}"
+       - "{{var2}}"
