@@ -10,7 +10,7 @@
 
   - name: edit webpage
     template:    
-      src: index.j2 
+      src: myidenx.j2 
       dest: /var/www/html/index.html 
     notify: restartwebserver
 
