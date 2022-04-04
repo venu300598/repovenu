@@ -16,6 +16,8 @@
     notify: restartwebserver
 
   handlers:
-    name: apache2
-    state: present
-  notify: restartwebserver``  
+  - name: restartwebserver
+    service:
+      name: apache2
+      state: present
+  
