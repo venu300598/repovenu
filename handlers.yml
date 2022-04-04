@@ -12,7 +12,7 @@
   - name: edit webpage
     template:    
       src: index.j2 
-      dest: var/www/html/index.html 
+      dest: /var/www/html/index.html 
     notify: restartwebserver
 
   handlers:
