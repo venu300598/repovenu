@@ -18,5 +18,5 @@
   - name: restartwebserver
     service:
       name: apache2
-      state: present
+      state: restart
   
