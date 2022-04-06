@@ -1,12 +1,9 @@
 ---
   vars:
-    var1: {"mywebserverubuntu"}
-    var2: {"mywebserverRedHat"}
-    var3: {"myjavainstaller"}
-    var4: {"myjavainstaller2"}
-
-    debug: display webservers
-    msg: {{"var1"}}    
+    var1: {{"mywebserverubuntu"}}
+    var2: {{"mywebserverRedHat"}}
+    var3: {{"myjavainstaller"}}
+    var4: {{"myjavainstaller2"}}   
  
   loop: 
      - {{"var1"}}
