@@ -1,2 +1,16 @@
 ---
-# vars file for mywebrole2
+  vars:
+    var1: {"mywebserverubuntu"}
+    var2: {"mywebserverRedHat"}
+    var3: {"myjavainstaller"}
+    var4: {"myjavainstaller2"}
+
+    debug: display webservers
+    msg: {{"var1"}}    
+ 
+  loop: 
+     - {{"var1"}}
+     - {{"var2"}}
+     - {{"var3"}}
+     - {{"var4"}}
+      
