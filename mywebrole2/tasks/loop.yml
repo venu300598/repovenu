@@ -3,6 +3,9 @@
   apt: 
    name: {{"item"}}
    state: present
+  yum:
+   name: {{"item"}}
+   state: present 
   loop: 
     - {{"var1"}}
     - {{"var2"}}
