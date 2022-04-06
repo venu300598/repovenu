@@ -1,2 +1,7 @@
 ---
-# tasks file for mywebrole2
+- name: install webserser 
+  apt: 
+    name: apache2
+    state: present
+  when: ansible_os_family == "Debian"  
+
