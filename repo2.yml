@@ -19,4 +19,4 @@
        - "{{var3}}"
   - name: display loop   
     debug:
-      msg: "{{loop}}"   
+      msg: "{{var}}"   
