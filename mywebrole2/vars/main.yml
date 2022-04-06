@@ -1,4 +1,5 @@
 ---
+# vars file for mywebrole2
   vars:
     var1: {{"mywebserverubuntu"}}
     var2: {{"mywebserverRedHat"}}
