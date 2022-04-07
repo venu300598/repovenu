@@ -1,7 +1,7 @@
 ---
 # handlers file for Role1
 
-- name: Restart apache
+- name: restartwebserver
   service:
     name: apache2
     state: restarted
