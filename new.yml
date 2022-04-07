@@ -2,4 +2,4 @@
 - hosts: webservers3
   become: yes
   roles: 
-    - role: Role1
+    - {role: Role1, when: ansible_os_family =="Debian"}
