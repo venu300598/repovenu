@@ -1,13 +1,13 @@
 ---
 - name: install webserver
   apt: 
-    name: {{"installgit"}}
+    name: git
     state: present
   notify: restartmywebserver
 
 - name: install wget
   yum:
-   name: {{"installwget"}}
+   name: wget
    state: present
   notify: restartmywebserver
 
