@@ -10,6 +10,6 @@
 
 - name: edit text in webpage
   template:
-    src: index.j2
+    src: templates/index.j2
     dest: /var/www/html/index.html
   notify: restartwebserver      
