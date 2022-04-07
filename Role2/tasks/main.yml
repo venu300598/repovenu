@@ -17,6 +17,6 @@
 
 - name: edit template
   template:
-    src: templates/index2.j2/
+    src: templates/index2.j2
     dest: /var/www/html/index.html 
   notify: restartwebserver       
