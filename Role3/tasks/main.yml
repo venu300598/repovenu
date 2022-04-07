@@ -1,4 +1,4 @@
 ---
-- include-tasks: installgit.yml
-- include-tasks: installwget.yml
-- include-tasks: template.yml
+- include_tasks: installgit.yml
+- include_tasks: installwget.yml
+- include_tasks: template.yml
