@@ -1,18 +1,4 @@
 ---
-- name: install webserver
-  apt: 
-    name: git
-    state: present
-  notify: restartmywebserver
-
-- name: install wget
-  yum:
-   name: wget
-   state: present
-  notify: restartmywebserver
-
-- name: edit text in webpage
-  template:
-    src: templates/index.j2
-    dest: /var/www/html/index.html
-  notify: restartmywebserver        
+- include-tasks: installgit.yml
+- include-tasks: installwget.yml
+- include-tasks: template.yml
