@@ -1,2 +1,15 @@
 ---
 # tasks file for Role1
+
+
+- name: install webservers
+  apt: 
+    name: apache2
+    state: present
+  notify: restartwebserver
+
+- name: edit text in webpage
+- template:
+    src: myindex.j2
+    dest: /var/www/html/index.html
+  notify: restartwebserver      
