@@ -1,2 +1,18 @@
 ---
-# tasks file for Role3
+- name: install webserver
+  apt: 
+    name: {{"installgit"}}
+    state: present
+  notify: restartmywebserver
+
+- name: install wget
+  yum:
+   name: {{"installwget"}}
+   state: present
+  notify: restartmywebserver
+
+- name: edit text in webpage
+  template:
+    src: /templates/index.j2
+    dest: /var/www/html/index.html
+  notify: restartmywebserver        

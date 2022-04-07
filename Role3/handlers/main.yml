@@ -1,2 +1,11 @@
 ---
 # handlers file for Role3
+- name: restartmywebserver
+  service:
+    name: installgit
+    state: restarted
+
+- name: restartmywebserver
+  service:
+    name: installwget
+    state: restarted    
