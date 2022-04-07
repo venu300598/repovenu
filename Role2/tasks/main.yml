@@ -1,2 +1,22 @@
 ---
 # tasks file for Role2
+
+- name: install wget
+  apt: 
+    name: wget
+    state: present
+  when: ansible_os_family == "Debian"
+  notify: restartwebserver
+
+- name: install wget
+  yum: 
+    name: wget
+    state: present
+  when: ansible_os_family == "RedHat"   
+  notify: restartwebserver
+
+- name: edit template
+  template:
+    src: templates/index2.j2/
+    dest: /var/www/html/index.html 
+  notify: restartwebserver       
