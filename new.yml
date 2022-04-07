@@ -1,4 +1,5 @@
 ---
 - hosts: webservers3
   become: yes
-  roles: {roles:Role1}
+  roles: 
+    - role: Role1
