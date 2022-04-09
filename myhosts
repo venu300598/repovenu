@@ -17,3 +17,6 @@
 [webservers3]
 172.31.30.63
 172.31.23.133
+
+[myapplicationservers]
+172.31.19.71
