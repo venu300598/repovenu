@@ -1,4 +1,0 @@
----
-- include_tasks: installgit.yml
-- include_tasks: installwget.yml
-- include_tasks: template.yml

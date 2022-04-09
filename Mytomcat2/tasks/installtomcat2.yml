@@ -1,0 +1,18 @@
+--- 
+- name: insatll tomcat
+  get_url:
+    url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
+    dest: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
+    force_basic_auth: yes
+
+
+- name: make directory
+  file:
+    path: /opt/tomcat 
+    state: directory
+
+
+- name: command of tomcat
+  command:
+     cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
+     create: /opt/tomcat/LICENSE       

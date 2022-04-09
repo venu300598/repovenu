@@ -1,6 +1,0 @@
----
-- name: edit changes
-  template:
-    src: templates/index.j2
-    dest: /var/www/html/index.html
-  notify: restartmywebserver  
