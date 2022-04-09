@@ -1,7 +1,0 @@
----
-# handlers file for Role2
-
-- name: restartwebserver
-  service:
-    name: wget
-    state: restarted
