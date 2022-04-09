@@ -7,9 +7,9 @@
 - name: web permissions
   template: 
      src: templates/tomweb.j2   
-     dest: sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
+     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: webhsot permissions
   template: 
      src: templates/tomwebhost.j2
-     dest: sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
+     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
