@@ -8,14 +8,14 @@
 
 - name: tomcat group read access
   file:
-    path: conf
+    path: /opt/tomcat/conf
     mode: g+r
     recurse: yes
     state: directory
 
 - name: tomcat group read access
   file:
-    path: conf
+    path: /opt/tomcat/conf
     mode: g+x
     state: directory
 
