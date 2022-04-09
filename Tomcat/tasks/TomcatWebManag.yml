@@ -1,0 +1,15 @@
+---
+- name: userweb permissions
+  template: 
+     src: templates/tomuser.j2
+     dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: web permissions
+  template: 
+     src: templates/tomweb.j2   
+     dest: sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: webhsot permissions
+  template: 
+     src: templates/tomwebhost.j2
+     dest: sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
