@@ -4,3 +4,7 @@
 - include_tasks: groupanduser.yml
 - include_tasks: installtomcat2.yml
 - include_tasks: Permissionupdate.yml 
+- include_tasks: servicefile.yml
+- include_tasks: starttomcatserv.yml
+- include_tasks: Managepermission.yml
+- include_tasks: restarttomcat.yml
