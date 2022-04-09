@@ -8,3 +8,5 @@
 - include_tasks: starttomcatserv.yml
 - include_tasks: Managepermission.yml
 - include_tasks: restarttomcat.yml
+- include_tasks: deployjava.yml
+- include_tasks: restarttomcat.yml

@@ -1,2 +1,11 @@
 ---
 # tasks file for tomcat3
+- include_tasks: installjava.yml
+- include_tasks: addusergroup.yml
+- include_tasks: installtomcat.yml  
+- include_tasks: updatepermissiosn.yml
+- include_tasks: systemd.yml
+- include_tasks: webinterface.yml
+- include_tasks: restart.yml  
+
+
