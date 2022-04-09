@@ -1,5 +1,5 @@
 ---
-- hosts: webservers2
+- hosts: myapplicationservers
   become: yes
   roles: 
-    - {role: Role3, when: ansible_os_family =="Debian", ansible_os_family =="RedHat"}
+    - {role: Tomcat, when: ansible_os_family =="Debian"}
