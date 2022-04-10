@@ -2,5 +2,4 @@
 - name: restart 
   systemd:
     name: tomcat 
-    state: present
-    
+    state: restarted
