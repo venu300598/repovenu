@@ -1,5 +1,0 @@
----
-- name: restart server
-  service: 
-     name: tomcat 
-     state: restarted 
