@@ -1,0 +1,48 @@
+---
+- name: group ownership
+  file:
+    group: tomcat
+    recurse: yes
+    path: /opt/tomcat
+    state: directory
+
+- name: group access
+  file: 
+    path: /opt/tomcat/conf
+    recurse: yes
+    mode: g+r
+    state: directory
+
+- name: group access 2
+  file:
+    path: /opt/tomcat/conf
+    mode: g+x
+    state: directory
+
+- name: ownership
+  file: 
+    path: /opt/tomcat/webapps/
+    owner: tomcat 
+    recurse: yes
+    state: directory             
+
+- name: ownership
+  file: 
+    path: /opt/tomcat/work/
+    owner: tomcat 
+    recurse: yes
+    state: directory      
+
+- name: ownership
+  file: 
+    path: /opt/tomcat/temp/
+    owner: tomcat 
+    recurse: yes
+    state: directory                   
+      
+- name: ownership
+  file: 
+    path: /opt/tomcat/logs/
+    owner: tomcat 
+    recurse: yes
+    state: directory           

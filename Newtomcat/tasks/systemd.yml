@@ -1,0 +1,12 @@
+---
+- name: systemd
+  template: 
+     src: templates/systemd.j2
+     dest: /etc/systemd/system/tomcat.service
+
+- name: systemd2 
+  systemd:
+    name: tomcat 
+    daemon_reload: yes
+    enabled: yes     
+    state: restarted

@@ -1,2 +1,9 @@
 ---
 # tasks file for Newtomcat
+- include_tasks: installnewtomcat.yml
+- include_tasks: Newtomcatuser.yml
+- include_tasks: tomcat.yml
+- include_tasks: Newupdatepermission.yml
+- include_tasks: systemd.yml
+- include_tasks: manage.yml
+- include_tasks: restart.yml
