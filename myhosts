@@ -20,3 +20,6 @@
 
 [myapplicationservers]
 172.31.19.71
+ 
+[newtomcat] 
+172.31.29.38
