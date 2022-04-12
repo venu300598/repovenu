@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  become: yes
+  tasks: 
+  - name: create ec2 instance
+    ec2:
+     key_name: ec2042222
+     instance_type: t2.micro
+     image: ami-05b0a0d0b5216048b
+     wait: yes
+     region: us-east-2
+     group: launch-wizard-2
+     count: 2
+     vpc_subnet_id: subnet-04df1a1d5047f44f4
+     assign_public_ip: yes
+     instance_tags:
+     Name: ansiblenodes
+     
